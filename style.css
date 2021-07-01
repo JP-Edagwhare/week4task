@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    background-color: lightgray;
+    height: 40vh;
+    width: fit-content;
+    padding: 10%;
+}
+.btn-counter{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+h1, p, button{
+    margin: 15px 0;
+}
+h1{
+    font-size: 2.5em;
+    color: navy;
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    font-size: 4em;
+    text-align: center;
+}
+button{
+   padding: 5px 10px;
+   font-size: 16px;
+   border-radius: 0.3em;
+   letter-spacing: 0.2em;
+   border: 2px solid navy;
+   cursor: pointer;
+}
+#increase{
+    border: 2px solid rgb(57, 117, 214);
+}
