@@ -1,30 +1,41 @@
-var countnum = 1;
-    document.getElementById("display").innerHTML=countnum;
+const decreaseBtn = document.querySelector("#decrease");
+const resetBtn = document.querySelector("#reset");
+const increaseBtn = document.querySelector("#increase");
 
-function decrease(){
-    countnum--;
-    document.getElementById("display").innerHTML=countnum;
-    document.getElementById("btndec").addEventListener("click", decreaseColor);
-}
-function reset(){
-    countrst=0;
-    document.getElementById("display").innerHTML=countrst;
-    document.getElementById("btnrst").addEventListener("click", resetColor);
-}
-function increase(){
-    countnum++;
-    document.getElementById("display").innerHTML=countnum;
-    document.getElementById("btninc").addEventListener("click", increaseColor);
-}
+let count = 0;
+document.getElementById("numdisplay").innerHTML = count;
 
-function decreaseColor(){
-    document.getElementById("display").setAttribute("style", "color:red");
-    }
+decreaseBtn.addEventListener("click", function () {
+  count--;
+  document.getElementById("numdisplay").innerHTML = count;
 
-function resetColor(){
-    document.getElementById("display").setAttribute("style", "color:black");
-}
+  if (count > 0) {
+    document.getElementById("numdisplay").style.color = "green";
+  } else if (count < 0) {
+    document.getElementById("numdisplay").style.color = "red";
+  } else {
+    document.getElementById("numdisplay").style.color = "black";
+  }
+});
 
-function increaseColor(){
-    document.getElementById("display").setAttribute("style", "color:green");
-}
+resetBtn.addEventListener("click", function () {
+  count = 0;
+  document.getElementById("numdisplay").innerHTML = count;
+
+  if (count === 0) {
+    document.getElementById("numdisplay").style.color = "black";
+  }
+});
+
+increaseBtn.addEventListener("click", function () {
+  count++;
+  document.getElementById("numdisplay").innerHTML = count;
+
+  if (count > 0) {
+    document.getElementById("numdisplay").style.color = "green";
+  } else if (count < 0) {
+    document.getElementById("numdisplay").style.color = "red";
+  } else {
+    document.getElementById("numdisplay").style.color = "black";
+  }
+});

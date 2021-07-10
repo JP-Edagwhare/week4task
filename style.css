@@ -1,44 +1,64 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-}
-body{
-    height: 100vh;
+  }
+  
+  body {
     display: grid;
     place-content: center;
-}
-.container{
+    margin-top: 50px;
+  }
+  main {
     background-color: lightgray;
-    height: 40vh;
-    width: fit-content;
-    padding: 10%;
-}
-.btn-counter{
+    width: 350px;
+    height: fit-content;
+    padding: 2rem;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: darkblue;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 6rem;
+    text-align: center;
+    font-family:cursive;
+    margin-bottom: 2rem;
+  }
+  
+  div {
     display: flex;
-    gap: 10px;
-    flex-direction: row;
-}
-h1, p, button{
-    margin: 15px 0;
-}
-h1{
-    font-size: 2.5em;
-    color: navy;
-    text-transform: uppercase;
-    text-align: center;
-}
-p{
-    font-size: 4em;
-    text-align: center;
-}
-button{
-   padding: 5px 10px;
-   font-size: 16px;
-   border-radius: 0.3em;
-   letter-spacing: 0.2em;
-   border: 2px solid navy;
-   cursor: pointer;
-}
-#increase{
-    border: 2px solid rgb(57, 117, 214);
-}
+    gap: 5%;
+    justify-content: center;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 0.5rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: black 2px 3px 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    width: 150px;
+  }
+  
+  #increase {
+    background-color: green;
+  }
+  
+  #decrease {
+    background-color: red;
+  }
+  
+  #reset {
+    background-color: yellow;
+    color: darkblue;
+  }
+  
